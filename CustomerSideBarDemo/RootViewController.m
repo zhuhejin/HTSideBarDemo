@@ -6,45 +6,38 @@
 //  Copyright © 2015年 Huatan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RootViewController.h"
 #import "HTSiderBar.h"
 
-@interface ViewController ()<HTSidebarDelegate>
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+
+@interface RootViewController ()<HTSidebarDelegate>
 
 @end
 
-@implementation ViewController
+@implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"demo";
     
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-     self.navigationController.navigationBar.tintColor = [UIColor purpleColor];
     // Do any additional setup after loading the view, typically from a nib.
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.tintColor = [UIColor purpleColor];
     UIBarButtonItem *menu = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStyleBordered target:self action:@selector(showMenu)];
     self.navigationItem.leftBarButtonItem = menu;
     
-    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 1000, 100)];
-    lab.text = @"hello";
-    [self.view addSubview:lab];
+
 }
 
 - (void)showMenu {
     
-    NSArray *images = @[
-                        [UIImage imageNamed:@"menu"],
-                        [UIImage imageNamed:@"menu"]
+    NSArray *itmes = @[
+                       @{@"icon":@"menu",@"title":@"page1" },
+                       @{@"icon":@"menu",@"title":@"page2" },
                         ];
-    NSArray *titles = @[
-                        @"111",
-                        @"222",
-                        ];
-
     
-    HTSiderBar *bar = [[HTSiderBar alloc] initWithIcons:images andTitles:titles];
+    HTSiderBar *bar = [[HTSiderBar alloc] initWithItems:itmes];
     bar.delegate = self;
     bar.hasShadow = YES;
 //    bar.showFromRight = YES;
@@ -54,10 +47,23 @@
 }
 
 - (void)sidebar:(HTSiderBar *)sidebar didTapItemAtIndex:(NSUInteger)index{
+    
     NSLog(@"selected index %lu",(unsigned long)index);
-    if (index == 1) {
-        [sidebar dismissAnimated:YES completion:nil];
+    
+    UIViewController *vc;
+    if (index == 0) {
+        vc = [[FirstViewController alloc] init];
+
+    }else{
+        vc = [[SecondViewController alloc] init];
     }
+    if ([self.navigationController.visibleViewController isKindOfClass:[vc class]]) {
+        return;
+    }
+    
+    [self.navigationController pushViewController:vc animated:NO];
+    
+    [sidebar dismissAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

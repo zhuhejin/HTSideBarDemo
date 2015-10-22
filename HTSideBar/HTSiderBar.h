@@ -45,7 +45,7 @@
 @property (nonatomic, weak) id <HTSidebarDelegate> delegate;
 
 
-- (instancetype)initWithIcons:(NSArray *)icons andTitles:(NSArray *)titles;
+- (instancetype)initWithItems:(NSArray *)items;
 
 - (void)show;
 - (void)showAnimated:(BOOL)animated;

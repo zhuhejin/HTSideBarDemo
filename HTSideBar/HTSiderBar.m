@@ -33,8 +33,7 @@
 @property (nonatomic, strong) UITableView *contentView;
 @property (nonatomic, strong) UIImageView *blurView;
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
-@property (nonatomic, strong) NSMutableArray *iconViews;
-@property (nonatomic, strong) NSMutableArray *titles;
+@property (nonatomic, strong) NSMutableArray *items;
 
 @end
 
@@ -42,21 +41,15 @@ static HTSiderBar *rn_frostedMenu;
 
 @implementation HTSiderBar
 
-- (instancetype)initWithIcons:(NSArray *)icons andTitles:(NSArray *)titles{
+- (instancetype)initWithItems:(NSArray *)items {
     self = [super init];
     if (self) {
         _animationDuration = 0.25f;
         _width = 150;
-        _iconViews = [icons mutableCopy];
-        _titles = [titles mutableCopy];
+        _items = [items mutableCopy];
         _hasShadow = NO;
     }
     return self;
-}
-
-- (instancetype)init {
-    NSAssert(NO, @"Unable to create with plain init.");
-    return nil;
 }
 
 - (void)loadView {
@@ -282,7 +275,7 @@ static HTSiderBar *rn_frostedMenu;
 
 #pragma mark - UItableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_iconViews count];;
+    return [_items count];;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -296,7 +289,10 @@ static HTSiderBar *rn_frostedMenu;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
     }
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = @"111";
+    
+    NSDictionary *dic = [_items objectAtIndex:indexPath.row];
+    cell.textLabel.text = dic[@"title"];
+    
     return cell;
 }
 

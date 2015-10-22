@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		164651D91BD8DEB100B690C0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 164651D81BD8DEB100B690C0 /* README.md */; settings = {ASSET_TAGS = (); }; };
 		164651DD1BD8E69600B690C0 /* HTSiderBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651DC1BD8E69600B690C0 /* HTSiderBar.m */; settings = {ASSET_TAGS = (); }; };
+		164651E01BD8ED7700B690C0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651DF1BD8ED7700B690C0 /* FirstViewController.m */; settings = {ASSET_TAGS = (); }; };
+		164651E31BD8EDCA00B690C0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651E21BD8EDCA00B690C0 /* SecondViewController.m */; settings = {ASSET_TAGS = (); }; };
 		16EE3DED1BD4ED9300C3605D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DEC1BD4ED9300C3605D /* main.m */; };
 		16EE3DF01BD4ED9300C3605D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DEF1BD4ED9300C3605D /* AppDelegate.m */; };
-		16EE3DF31BD4ED9300C3605D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DF21BD4ED9300C3605D /* ViewController.m */; };
+		16EE3DF31BD4ED9300C3605D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DF21BD4ED9300C3605D /* RootViewController.m */; };
 		16EE3DF61BD4ED9300C3605D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EE3DF41BD4ED9300C3605D /* Main.storyboard */; };
 		16EE3DF81BD4ED9300C3605D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EE3DF71BD4ED9300C3605D /* Assets.xcassets */; };
 		16EE3DFB1BD4ED9300C3605D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EE3DF91BD4ED9300C3605D /* LaunchScreen.storyboard */; };
@@ -40,12 +42,16 @@
 		164651D81BD8DEB100B690C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		164651DB1BD8E69600B690C0 /* HTSiderBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSiderBar.h; sourceTree = "<group>"; };
 		164651DC1BD8E69600B690C0 /* HTSiderBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSiderBar.m; sourceTree = "<group>"; };
+		164651DE1BD8ED7700B690C0 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		164651DF1BD8ED7700B690C0 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		164651E11BD8EDCA00B690C0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		164651E21BD8EDCA00B690C0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		16EE3DE81BD4ED9300C3605D /* CustomSideBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSideBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EE3DEC1BD4ED9300C3605D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16EE3DEE1BD4ED9300C3605D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16EE3DEF1BD4ED9300C3605D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		16EE3DF11BD4ED9300C3605D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		16EE3DF21BD4ED9300C3605D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		16EE3DF11BD4ED9300C3605D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		16EE3DF21BD4ED9300C3605D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		16EE3DF51BD4ED9300C3605D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16EE3DF71BD4ED9300C3605D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16EE3DFA1BD4ED9300C3605D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,8 +125,12 @@
 			children = (
 				16EE3DEE1BD4ED9300C3605D /* AppDelegate.h */,
 				16EE3DEF1BD4ED9300C3605D /* AppDelegate.m */,
-				16EE3DF11BD4ED9300C3605D /* ViewController.h */,
-				16EE3DF21BD4ED9300C3605D /* ViewController.m */,
+				16EE3DF11BD4ED9300C3605D /* RootViewController.h */,
+				16EE3DF21BD4ED9300C3605D /* RootViewController.m */,
+				164651DE1BD8ED7700B690C0 /* FirstViewController.h */,
+				164651DF1BD8ED7700B690C0 /* FirstViewController.m */,
+				164651E11BD8EDCA00B690C0 /* SecondViewController.h */,
+				164651E21BD8EDCA00B690C0 /* SecondViewController.m */,
 				16EE3DF41BD4ED9300C3605D /* Main.storyboard */,
 				16EE3DF71BD4ED9300C3605D /* Assets.xcassets */,
 				16EE3DF91BD4ED9300C3605D /* LaunchScreen.storyboard */,
@@ -287,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				164651DD1BD8E69600B690C0 /* HTSiderBar.m in Sources */,
-				16EE3DF31BD4ED9300C3605D /* ViewController.m in Sources */,
+				164651E01BD8ED7700B690C0 /* FirstViewController.m in Sources */,
+				16EE3DF31BD4ED9300C3605D /* RootViewController.m in Sources */,
+				164651E31BD8EDCA00B690C0 /* SecondViewController.m in Sources */,
 				16EE3DF01BD4ED9300C3605D /* AppDelegate.m in Sources */,
 				164651D91BD8DEB100B690C0 /* README.md in Sources */,
 				16EE3DED1BD4ED9300C3605D /* main.m in Sources */,

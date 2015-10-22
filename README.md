@@ -13,4 +13,8 @@ HTSideBar
 
 - drag HTSiderBar to your project
 
+- #import "HTSiderBar.h"
+
+- #import "HTSiderBar.h"
+
 
