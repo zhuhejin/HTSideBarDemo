@@ -16,6 +16,6 @@ HTSideBar
 - let your viewcontroller inherit RootViewController 
 
 ## Question
-- if you have any question please email me "zhuhejin88@16.com"
+- if you have any question please email me "zhuhejin88@126.com"
 
 
