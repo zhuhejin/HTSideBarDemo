@@ -35,8 +35,8 @@
 - (void)showMenu {
     
     NSArray *images = @[
-                        [UIImage imageNamed:@"menu@2x"],
-                        [UIImage imageNamed:@"menu@2x"]
+                        [UIImage imageNamed:@"menu"],
+                        [UIImage imageNamed:@"menu"]
                         ];
     NSArray *titles = @[
                         @"111",
@@ -46,7 +46,7 @@
     
     HTSiderBar *bar = [[HTSiderBar alloc] initWithIcons:images andTitles:titles];
     bar.delegate = self;
-//    bar.hasShadow = YES;
+    bar.hasShadow = YES;
 //    bar.showFromRight = YES;
     bar.width = 300;
     [bar show];

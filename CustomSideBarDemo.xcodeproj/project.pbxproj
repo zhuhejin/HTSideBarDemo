@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		164651D91BD8DEB100B690C0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 164651D81BD8DEB100B690C0 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		164651DD1BD8E69600B690C0 /* HTSiderBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651DC1BD8E69600B690C0 /* HTSiderBar.m */; settings = {ASSET_TAGS = (); }; };
 		16EE3DED1BD4ED9300C3605D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DEC1BD4ED9300C3605D /* main.m */; };
 		16EE3DF01BD4ED9300C3605D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DEF1BD4ED9300C3605D /* AppDelegate.m */; };
 		16EE3DF31BD4ED9300C3605D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DF21BD4ED9300C3605D /* ViewController.m */; };
@@ -16,8 +17,6 @@
 		16EE3DFB1BD4ED9300C3605D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EE3DF91BD4ED9300C3605D /* LaunchScreen.storyboard */; };
 		16EE3E061BD4ED9300C3605D /* CustomerSideBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3E051BD4ED9300C3605D /* CustomerSideBarDemoTests.m */; };
 		16EE3E111BD4ED9300C3605D /* CustomerSideBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3E101BD4ED9300C3605D /* CustomerSideBarDemoUITests.m */; };
-		16EE3E201BD4F00B00C3605D /* HTSiderBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3E1F1BD4F00B00C3605D /* HTSiderBar.m */; settings = {ASSET_TAGS = (); }; };
-		16EE3E221BD4F92B00C3605D /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EE3E211BD4F92B00C3605D /* menu@2x.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		164651D81BD8DEB100B690C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		164651DB1BD8E69600B690C0 /* HTSiderBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSiderBar.h; sourceTree = "<group>"; };
+		164651DC1BD8E69600B690C0 /* HTSiderBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSiderBar.m; sourceTree = "<group>"; };
 		16EE3DE81BD4ED9300C3605D /* CustomSideBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSideBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EE3DEC1BD4ED9300C3605D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16EE3DEE1BD4ED9300C3605D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,9 +56,6 @@
 		16EE3E0C1BD4ED9300C3605D /* CustomSideBarDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSideBarDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EE3E101BD4ED9300C3605D /* CustomerSideBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerSideBarDemoUITests.m; sourceTree = "<group>"; };
 		16EE3E121BD4ED9300C3605D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16EE3E1E1BD4F00B00C3605D /* HTSiderBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSiderBar.h; sourceTree = "<group>"; };
-		16EE3E1F1BD4F00B00C3605D /* HTSiderBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSiderBar.m; sourceTree = "<group>"; };
-		16EE3E211BD4F92B00C3605D /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +83,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164651DA1BD8E69600B690C0 /* HTSideBar */ = {
+			isa = PBXGroup;
+			children = (
+				164651DB1BD8E69600B690C0 /* HTSiderBar.h */,
+				164651DC1BD8E69600B690C0 /* HTSiderBar.m */,
+			);
+			path = HTSideBar;
+			sourceTree = "<group>";
+		};
 		16EE3DDF1BD4ED9300C3605D = {
 			isa = PBXGroup;
 			children = (
+				164651DA1BD8E69600B690C0 /* HTSideBar */,
 				164651D81BD8DEB100B690C0 /* README.md */,
 				16EE3DEA1BD4ED9300C3605D /* CustomerSideBarDemo */,
 				16EE3E041BD4ED9300C3605D /* CustomerSideBarDemoTests */,
@@ -109,13 +117,10 @@
 		16EE3DEA1BD4ED9300C3605D /* CustomerSideBarDemo */ = {
 			isa = PBXGroup;
 			children = (
-				16EE3E211BD4F92B00C3605D /* menu@2x.png */,
 				16EE3DEE1BD4ED9300C3605D /* AppDelegate.h */,
 				16EE3DEF1BD4ED9300C3605D /* AppDelegate.m */,
 				16EE3DF11BD4ED9300C3605D /* ViewController.h */,
 				16EE3DF21BD4ED9300C3605D /* ViewController.m */,
-				16EE3E1E1BD4F00B00C3605D /* HTSiderBar.h */,
-				16EE3E1F1BD4F00B00C3605D /* HTSiderBar.m */,
 				16EE3DF41BD4ED9300C3605D /* Main.storyboard */,
 				16EE3DF71BD4ED9300C3605D /* Assets.xcassets */,
 				16EE3DF91BD4ED9300C3605D /* LaunchScreen.storyboard */,
@@ -255,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				16EE3DFB1BD4ED9300C3605D /* LaunchScreen.storyboard in Resources */,
-				16EE3E221BD4F92B00C3605D /* menu@2x.png in Resources */,
 				16EE3DF81BD4ED9300C3605D /* Assets.xcassets in Resources */,
 				16EE3DF61BD4ED9300C3605D /* Main.storyboard in Resources */,
 			);
@@ -282,10 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164651DD1BD8E69600B690C0 /* HTSiderBar.m in Sources */,
 				16EE3DF31BD4ED9300C3605D /* ViewController.m in Sources */,
 				16EE3DF01BD4ED9300C3605D /* AppDelegate.m in Sources */,
 				164651D91BD8DEB100B690C0 /* README.md in Sources */,
-				16EE3E201BD4F00B00C3605D /* HTSiderBar.m in Sources */,
 				16EE3DED1BD4ED9300C3605D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
