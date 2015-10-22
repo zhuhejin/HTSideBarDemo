@@ -7,8 +7,10 @@ HTSideBar
 
 ## New Features
 
-- shadwo suppor
+- shadwo support  use hasShadow
+
+## How to use
+
+- drag HTSiderBar to your project
 
 
-
-# HTSideBarDemo
