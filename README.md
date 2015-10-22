@@ -13,8 +13,9 @@ HTSideBar
 
 - drag HTSiderBar to your project
 
-- #import "HTSiderBar.h"
+- let your viewcontroller inherit RootViewController 
 
-- #import "HTSiderBar.h"
+## Question
+- if you have any question please email me "zhuhejin88@16.com"
 
 
