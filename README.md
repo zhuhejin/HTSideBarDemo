@@ -5,9 +5,11 @@ HTSideBar
 
 - Add UITabelview make it more easier to custom your side bar
 
-- Good for iPad side bar menu
+- Good for iPad side bar  or menu
 
+Here is an image which can show what it exactly does. 
 
+![Screenshot](https://github.com/zhuhejin/HTSideBarDemo/blob/master/2.png)
 
 ## New Features
 
