@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		164651D91BD8DEB100B690C0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 164651D81BD8DEB100B690C0 /* README.md */; settings = {ASSET_TAGS = (); }; };
-		164651DD1BD8E69600B690C0 /* HTSiderBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651DC1BD8E69600B690C0 /* HTSiderBar.m */; settings = {ASSET_TAGS = (); }; };
-		164651E01BD8ED7700B690C0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651DF1BD8ED7700B690C0 /* FirstViewController.m */; settings = {ASSET_TAGS = (); }; };
-		164651E31BD8EDCA00B690C0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651E21BD8EDCA00B690C0 /* SecondViewController.m */; settings = {ASSET_TAGS = (); }; };
-		164651E61BD8F0D100B690C0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651E51BD8F0D100B690C0 /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		164651D91BD8DEB100B690C0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 164651D81BD8DEB100B690C0 /* README.md */; };
+		164651DD1BD8E69600B690C0 /* HTSiderBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651DC1BD8E69600B690C0 /* HTSiderBar.m */; };
+		164651E01BD8ED7700B690C0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651DF1BD8ED7700B690C0 /* FirstViewController.m */; };
+		164651E31BD8EDCA00B690C0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651E21BD8EDCA00B690C0 /* SecondViewController.m */; };
+		164651E61BD8F0D100B690C0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164651E51BD8F0D100B690C0 /* RootViewController.m */; };
 		16EE3DED1BD4ED9300C3605D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DEC1BD4ED9300C3605D /* main.m */; };
 		16EE3DF01BD4ED9300C3605D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE3DEF1BD4ED9300C3605D /* AppDelegate.m */; };
 		16EE3DF61BD4ED9300C3605D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EE3DF41BD4ED9300C3605D /* Main.storyboard */; };

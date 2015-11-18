@@ -5,6 +5,10 @@ HTSideBar
 
 - Add UITabelview make it more easier to custom your side bar
 
+- Good for iPad side bar menu
+
+
+
 ## New Features
 
 - shadwo support  use hasShadow
